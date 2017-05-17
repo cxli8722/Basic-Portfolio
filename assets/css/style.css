@@ -5,81 +5,102 @@ article, aside, footer, header, nav, section{
 
 }
 
-body{
-	background-image: url("http://www.zingerbugimages.com/backgrounds/light_blue_parchment_paper_background_1800x1600.jpg");
+html {
+	padding:0;
 	margin:0;
+	background-color: #dddddd ;
+
+}
+
+body{
+	background-image: url("../images/backgroundimage.jpg");
+	margin:0;
+	margin-right:auto;
+	margin-left:auto;
+	height: 655px;
+	width:960px;
+	position: relative;
+	color:#777777;
+	font-family: Arial,helvetica neue, helvetica, sans-serif;
 }
 	
-
-/*logo and three links*/
+	
+/*nav bar - position fixed*/
 nav{
 	background-color: #fff;
-	opacity: .6;
-	width:100%;
+	color:white;
+	width:960px;
 	height: 90px;
 	margin-bottom: 50px;
 	border-bottom: 1px solid #ededed;
 	position: fixed;
 	top:0%;
 	z-index: 3;
-	
-
 
 }
+
+/* my name logo formating*/
 .logo{
 	background-color: #4aaaa5;
-	font-size: 45px;
+	font-size: 40px;
 	width: 200px;
-	height: 60px;
+	height: 40px;
 	float: left;
 	color:#fff;
 	text-align: center;
 	padding: 15px;
-	margin-top: 0;
-	margin-left:200px;
-
-
+	margin-top: 20px;
+	margin-left:50px;
 }
+
 
 /*list for buttons*/
-
-
 li{
-	display:inline;
+
 	float:right;
-
-
-/*button design inserted within the list*/
+	margin-right:10px;
+	
 }
+/*link text gray*/
+li a{
+	text-decoration: none;
+	color:#808080;
+}
+/*button design inserted within the list*/
 .button{
 	font-weight: 100;
 	font-size: 20px;
-	color:#fff;
 	border: solid #4aaaa5;
 	border-radius: 10px;
 	padding: 10px 20px;
 	transition-duration: 200ms;
 	margin-top: 20px;
-	margin-right: 60px;
+
+
 }
 
 .button:hover{
 	background-color: #4aaaa5;
 
+
+}
+a:hover {
+	color:white;
 }
 
 /*section design-about me*/
 
 section{
-	height: 700px;
-	width: 50%;
-	padding: 30px;
+	height: 380px;
+	width: 540px;
+	padding: 20px;
 	background-color:#fff;
-	margin-left: 200px;
-	margin-right: 50px;
+	margin-left: 40px;
+	margin-right:20px;
 	margin-bottom: 50px;
 	position: absolute;
-	top:20%;
+	top:120px;
+	left:0;
 	border: 1px solid #ddd;
 	z-index: 1;
 
@@ -90,7 +111,7 @@ article{
 
 #aboutme{
 	color:#4aaaa5;
-	font-size: 35px;
+	font-size: 30px;
 	padding: 20px;
 	border-bottom: 5px solid #ddd;
 }
@@ -99,42 +120,49 @@ article{
 
 #container{
 	float:left;
-	width: 200px;
-	height: 200px;
-	margin-right:20px;
-	margin-bottom: 20px;
+	width: 150px;
+	height: 150px;
+	margin-right:10px;
+	margin-bottom: 10px;
 	border:10px inset #4aaaa5;
+
 	
 	
 }
 
 /*formating aside*/
 aside{
-	width:18%;
-	height: 200px;
+	text-align: center;
+	width:220px;
+	height: 125px;
 	background-color: #fff;
-	padding:20px;
+	padding: 20px;
 	position: absolute;
-	top:20%;
-	right:5%;
+	top:120px;
+	right:40px;
 	border:1px solid #ddd;
 	
+}
+div{
+	padding-top: 20px;
 }
 
 #connect{
 	color:#4aaaa5;
 	font-size: 25px;
-	padding:20px;
+	padding-bottom:10px;
 	border-bottom: 1px solid #ddd;
+
 }
 
-/*container for connect with me*/
-#container1{
+/*container for connect with me
+.container1{
 	float:left;
 	width: 70px;
 	height: 70px;
-	margin-right: 5px;
+	margin-right: 1px;
 }
+*/
 
 /*formating footer*/
 footer{
@@ -142,13 +170,13 @@ footer{
 	color:#ececec;
 	opacity: .8;
 	height: 40px;
-	width: 100%;
-	border-top: 3px solid #4aaaa5;
+	width: 920px;
+	padding: 20px;
+	border-top:3px solid #4aaaa5;
 	background-color: #666;
 	text-align: center;
-	padding: 20px;
-	position:fixed;
-	bottom: -10px;
+	position:absolute;
+	bottom:0;
 	z-index: 2;
 
 }
